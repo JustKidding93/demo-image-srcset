@@ -12,7 +12,16 @@
     </style>
   </head>
   <body>
+    <!--1. Create a regular img tag-->
+    <img src="img/eggs-900.jpg" alt="Easter Eggz">
+    
+    <!--2. Add a srcset-->
     <img srcset="img/eggs-600.jpg, img/eggs-900.jpg" src="img/eggs-900.jpg" alt="Easter Eggz">
+
+    <!--3. Give the browser more info with width descriptors-->
     <img srcset="img/eggs-600.jpg 600w, img/eggs-900.jpg 900w" src="img/eggs-900.jpg" alt="Easter Eggz">
+
+    <!--4. Use the sizes attribute along with the src attribute to give the browser even more info on which image to choose from-->
+    <img srcset="img/eggs-600.jpg 600w, img/eggs-900.jpg 900w" sizes="(max-width: 600px) 600px, 900px" src="img/eggs-900.jpg" alt="Easter Eggz">
   </body>
 </html>
